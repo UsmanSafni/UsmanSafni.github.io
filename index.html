@@ -1,201 +1,365 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safni Usman - AI/ML Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        aside {
+            width: 30%;
+            background-color: white;
+            color: black;
+            padding: 2rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            text-align: left;
+        }
+        aside img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        aside h1 {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+        aside h2 {
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+        aside p {
+            font-size: 0.8rem;
+            margin: 1rem 0;
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin: 0.5rem 0;
+			font-size: 0.7rem;
+        }
+        aside ul li i {
+            margin-right: 0.5rem;
+        }
+        .social-icons {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: left;
+            gap: 1rem;
+        }
+        .social-icons a {
+            color: #00008B;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        main {
+            width: 70%;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .projects {
+            margin-bottom: 2rem;
+        }
+        .projects h2 {
+            color: #00008B;
+			font-size: 0.7rem;
+        }
+		.projects h3 {
+            color: black;
+			font-size: 1.0rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .project-item {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+			font-size: 0.8rem;
+        }
+        .project-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        .project-item div {
+            flex: 1;
+        }
+        .experience {
+            margin-top: 2rem;
+        }
+        .experience h2 {
+            color: #00008B;
+			font-size: 0.8rem;
+        }
+        .experience-item {
+            margin-bottom: 1rem;
+        }
+        .experience-item h3 {
+            margin: 0;
+            font-size: 0.8rem;
+        }
+        .experience-item p {
+            margin: 0.5rem 0;
+			font-size: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: white;
+            color: black;
+            margin-top: 2rem;
+        }
+		.tags {
+			margin-bottom: 1rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
 
-<html>
-	<head>
-		<title>Safni Usman T</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+		.tag {
+			background-color: #00008B;
+			color: white;
+			font-size: 0.8rem;
+			padding: 0.4rem 0.8rem;
+			border-radius: 20px;
+			text-align: center;
+			display: inline-block;
+			cursor: default;
+		}
+		.tags_1 {
+			margin-bottom: 1rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
+		.tag_1 {
+			background-color: #e0e0e0;
+			color: black;
+			font-size: 0.8rem;
+			padding: 0.4rem 0.8rem;
+			border-radius: 20px;
+			text-align: center;
+			display: inline-block;
+			cursor: default;
+		}
+    </style>
+</head>
+<body>
+    <aside>
+        <img src="images/safni1.jpg" alt="Profile Photo">
+        <h1>Safni Usman</h1>
+        <h2>AI Engineer | Ex Software Engineer@Bosch</h2>
+		<div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://medium.com" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="mailto:safni.usman@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>Passionate about developing innovative AI solutions across diverse domains, with expertise in Machine Learning, 
+		Natural Language Processing, LLMOps and AI product development.</p>
+        
+        <h2>🛠️Skills</h2>
+        <ul>
+            <li><i class="fas fa-code"></i> <b>Languages:</b> Python, C/C++</li>
+			<li><i class="fas fa-brain"></i><b> Expertise:</b> Machine Learning, NLP, LLMOps</li>
+
+
+			<li><i class="fas fa-database"></i> <b>Data Analysis:</b> Pandas, Matplotlib/Seaborn, NumPy</li>
+			<li><i class="fas fa-laptop"></i> <b>Libraries/Frameworks: </b>Scikit-learn, PyTorch, LangChain</li>
+			<li><i class="fas fa-server"></i> <b>Deployment Tools: </b>Docker, AWS </li>
+			<li><i class="fas fa-database"></i> <b> Backend Development: </b>FastAPI, Vector/Graph Database</li>
+			<li><i class="fas fa-code-branch"></i> <b>Version Control: </b>Git, GitHub</li>
+        </ul>
+        
+        <h2>⭐Recent Achievements</h2>
+        <ul>
+            <li>Abu Dhabi Youth Challenge: Winner of Top 8 Ideas</li>
+
+			
+        </ul>
+
+    </aside>
+    
+    <main>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
 					
-					<p><strong>🤖 Welcome to My Portfolio! 🚀</strong> </p>
-<p> Hello there! 👋 I'm Safni Usman,  a software engineer with a passion for leveraging technology to solve complex problems and 
-drive innovation. As you explore my portfolio, you'll see a collection of machine learning, deep learning and robotics projects.</p>
+                    <img src="images/aiagent.png" alt="aiagent">
+                    <div>
+                        <h3>ANA :Agentic Corrective RAG using LangGraph</h3>
+						<div class="tags">
+						<span class="tag">NLP</span>
+						<span class="tag">Agentic RAG</span>
+						<span class="tag">LangGraph</span>
+						<span class="tag">Python</span>
+					</div>
+                        <p>leverages LangGraph for modular workflow design and node-based task orchestration. 
+						The system integrates LLM with document retrieval and web search to mitigate hallucinations and improve response accuracy by 
+						dynamically fetching relevant context. 
+						Designed as an agentic architecture, 
+						it incorporates corrective mechanisms for enhanced reliability in query-answering workflows.</p>
+                        
+						<a href="https://huggingface.co/spaces/Safni/ANA" target="_blank">Demo</a> | <a href="https://github.com/UsmanSafni/ANA" target="_blank">Code</a>
+                    </div>
+					
+                </div>
+                <div class="project-item">
+                    <img src="images/fin3.png" alt="fina analysis">
+                    <div>
+                        <h3>Financial Assistant</h3>
+						<div class="tags">
+						<span class="tag">NLP</span>
+						<span class="tag">Tool-Calling Agent</span>
+						<span class="tag">LangChain</span>
+						<span class="tag">Python</span>
+					</div>
+                        <p>Provides real-time insights into key financial metrics like liquidity, solvency, and profitability for US-SEC listed companies.
+						Leveraging LangChain's tool-calling agent, and data visualization, it dynamically 
+						generates accurate responses and interactive plots based on user queries. 
+						This solution bridges advanced NLP capabilities with financial analytics, 
+						offering a robust tool for professionals and enthusiasts alike.</p>
+                        <a href="https://huggingface.co/spaces/Safni/Financial_assistant" target="_blank">Demo</a> | <a href="https://github.com/UsmanSafni/Financial_Assistant" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/spend.png" alt="spendwise">
+                    <div>
+                        <h3>Spendwise</h3>
+						<div class="tags">
+						<span class="tag">NLP</span>
+						<span class="tag">Data Analytics</span>
+						
+						<span class="tag">Python</span>
+					</div>
+                        <p>A personal financial assistant utilizing data analytics techniques for transaction categorization, spending insights, and chat query support.</p>
+                        
+                        <a href="https://huggingface.co/spaces/Safni/spendwise_v2" target="_blank">Demo</a> | <a href="https://github.com/UsmanSafni/SpendWise" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project_planner.png" alt="planner">
+                    <div>
+                        <h3>Multi Agent</h3>
+						<div class="tags">
+						<span class="tag">NLP</span>
+						<span class="tag">Multi Agents</span>
+						<span class="tag">CrewAI</span>
+						<span class="tag">Python</span>
+					</div>
+                        <p>Leverages a robust multi-agent system to generate detailed project plans tailored to user inputs. It features dynamic project planning,
+employing a multi-agent architecture for task decomposition, resource estimation, and effective allocation.</p>
+                        <a href="https://huggingface.co/spaces/Safni/Autoplan_AI" target="_blank">Demo</a> | <a href="https://github.com/UsmanSafni/Autoplan_AI" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+			<div class="experience-item">
+                <h3>Innovator, Abu Dhabi Early Childhood Authority</h3>
+                <p>2024 Oct - 2024 Dec</p>
+				<div class="tags_1">
+						<span class="tag_1">Applied AI</span>
+						<span class="tag_1">NLP</span>
+						<span class="tag_1">Python</span>
 				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One 
-					<section id="one">
-						<header class="major">
-							<h3></h3>
-						</header>
-						<p>What drives me is the excitement of creating intelligent systems that learn, adapt, and make a meaningful impact.
-						My passion for artificial intelligence extends beyond coding; 
-						it's about exploring the endless possibilities that emerge when technology and human ingenuity converge.</p>
-					</section>-->
-
-				<!-- Two -->
-					<section id="two">
-						<h1>Recent Works</h1>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								
-								<img src="images/thumbs/01.jpg" alt="" class="image fit thumb" />
-
-								<h3>Facial Key points Detection</h3>
-								<p> Facial keypoint detection plays a crucial role in computer vision and image analysis, offering valuable insights into facial features and expressions. The significance of facial keypoint detection lies in its ability to extract precise information about the location and orientation of specific facial landmarks. This information is then utilized in various applications, with a notable impact on emotion analysis and facial expression detection.
-</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="https://github.com/UsmanSafni/Facial-Keypoints-Detection" class="button large">Github link</a></li>
-									</ul>
-									
-								</footer>
-                                
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								
-								<img src="images/thumbs/02.jpg" alt="" class="image fit thumb" />
-
-								<h3>Image Compression using K-means</h3>
-								<p>Image compression aims to reduce the size of image files while preserving the essential visual information. This process is essential for efficient storage, transmission, and sharing of images in various applications, such as web browsing, medical imaging and satellite data transmission.
-
-The fundamental idea behind image compression is to represent the image in a more compact form without significant loss of quality.</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="https://github.com/UsmanSafni/Image-Compression" class="button large">Github link</a></li>
-									</ul>
-									
-								</footer>
-                                
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								
-								<img src="images/thumbs/03.jpg" alt="" class="image fit thumb" />
-
-								<h3>Object Localisation</h3>
-								<p>Object localization involves the task of identifying and determining the location of objects or specific regions within an image. 
-								The primary goal is to develop a system that can accurately locate and delineate the boundaries of objects or areas of interest within the given images.
-								Object localization is a crucial aspect of computer vision, with applications ranging from autonomous vehicles and surveillance systems to medical imaging and augmented reality.</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="https://github.com/UsmanSafni/Object-localisation" class="button large">Github link</a></li>
-									</ul>
-									
-								</footer>
-                                
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								
-								<img src="images/thumbs/04.jpg" alt="" class="image fit thumb" />
-
-								<h3>3D Quadrotor Controller</h3>
-								<p>A 3D Quadrotor Controller and Trajectory Generation system represent a sophisticated blend of robotics and control engineering designed to navigate and control the motion of quadrotor aerial vehicles in three-dimensional space.
-
-The primary objective of a 3D Quadrotor Controller is to stabilize and maneuver the quadrotor, ensuring precise control over its position and orientation through a given set of way points specified by the trajectory module.</p>								
-								<footer>
-									<ul class="actions">
-										<li><a href="https://github.com/UsmanSafni/3D-Quadrotor-Controller" class="button large">Github link</a></li>
-									</ul>
-									
-								</footer>
-                                
-							</article>
-							
-							
-							
-					</section>
 				
-				<!-- Three -->
-					<section id="three">
-					
-						<h1>Publications</h1>
-						
-						
-							<div class="col-4 col-12-small">
-							<article class="col-6 col-12-small work-item"style="font-size: 1.2em;">
-								
-								 <a href="https://ieeexplore.ieee.org/document/9153989">
-                                 <h3>Energy management via anomaly detection for manufacturing enterprises</h3>
-                                 </a>
-								<p>This paper proposes an approach to optimize the energy consumption by detecting electrical and
-operational anomalies of connected loads in the manufacturing unit via analyzing electrical
-parameters collected through installed energy meters at load level. The gathered data is subjected
-to anomaly detection techniques using machine learning. It presents an effective way to draw The
-conclusions and economic recommendations from the analysis for the facility management.
-</p>
-							</article>
-							<article class="col-6 col-12-small work-item"style="font-size: 1.2em;">
-								
-								 <a href="https://link.springer.com/chapter/10.1007/978-981-15-8815-0_3">
-                                 <h3>Optimal battery charging forecasting algorithms for domestic applications and electric 
-vehicles by comprehending sustainable energy</h3>
-                                 </a>
-								<p>The paper focuses on the development of forecasting algorithms for optimal battery charging in
-domestic applications and electric vehicles, with a particular emphasis on incorporating sustainable
-energy sources. The developed algorithm assists in scheduling the charging time of batteries by
-choosing the lowest electricity price slots and thus resulting in economic savings to the customer. It
-also includes an intelligent charge scheduling system that classifies PHEVs to be charged
-according to the state of charge of the battery, time duration of parking, etc., and attributes
-optimized time slots for charging these PHEVs.</p>
-							</article>
-								
-							</div>
-						
-					</section>
-
-				<!-- Four -->
-					<section id="four">
-						<h2>Contact Details</h2>
-						
-						
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										
-										Abu Dhabi, UAE
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										00971504956393
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:usmansafni@gmail.com">usmansafni@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-				<!-- Four -->
-				<!--
-					
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						
-						<li><a href="https://github.com/UsmanSafni?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/safni-usman-t-8334a6b0/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:usmansafni@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+                <p>Spear-headed the development of AI-powered solutions tailored to the early childhood development sector, 
+				focusing on empowering parents with cutting-edge tools for intentional parenting for the prestigious ADYC Startup Post Program.</p>
+            </div>
+            <div class="experience-item">
+                <h3>AI Engineer - Freelance, Omdena</h3>
+                <p>2024 Aug - Present</p>
+				<div class="tags_1">
+						<span class="tag_1">Applied AI</span>
+						<span class="tag_1">NLP</span>
+						<span class="tag_1">Computer Vision</span>
+						<span class="tag_1">Python</span>
 				</div>
-			</footer>
+				
+                <p>Collaborated on applied AI projects focusing on Legal and Helathcare domains, employing state-of-the-art AI techniques.</p>
+            </div>
+            <div class="experience-item">
+                <h3>AI Resident, Decoding Data Science</h3>
+                <p>2024 Apr - Present</p>
+				<div class="tags_1">
+						<span class="tag_1">Applied AI</span>
+						<span class="tag_1">NLP</span>
+						<span class="tag_1">Python</span>
+						
+				</div>
+                <p>Developed comprehensive AI solutions tailored for the financial sector, enhancing data-driven decision-making and operational efficiency.</p>
+            </div>
+			<div class="experience-item">
+                <h3>Professional and Applied Technology Instructor, Whitehat Jr</h3>
+                <p>2020 Jul - 2023 Feb</p>
+				<div class="tags_1">
+						<span class="tag_1">Data Analytics</span>
+						<span class="tag_1">Machine Learning</span>
+					
+						<span class="tag_1">Python</span>
+				</div>
+                <p>Developed and delivered a professional technology curriculum to aspiring software developers.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Software Engineer, Bosch</h3>
+                <p>2017 Aug - 2020 Apr</p>
+				<div class="tags_1">
+						<span class="tag_1">Embedded C/C++</span>
+						<span class="tag_1">Software Developmnet</span>
+						<span class="tag_1">Communication Protocols</span>
+						<span class="tag_1">Automotive</span>
+				</div>
+                <p>Developed software for Emdedded Systems particulay automotive domain, contributing to the development and optimization of software for industrial applications.</p>
+            </div>
+            
+        </section>
+		<section class="experience">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>M.Tech : Electronics Design Technology</h3>
+				<p>🎖️First Class with Honours</p>
+                <p>National Institute of Electronics and Information Technology, Calicut, India</p>
+                
+            </div>
+            <div class="experience-item">
+                <h3>B.Tech : Electronics and Communication Engineering</h3>
+				<p>🎖️First Class with Honours</p>
+                <p>Government Engineering College, Palakkad, India</p>
+                
+            </div>
+            
+        </section>
+				<footer>
+        <p>&copy; 2024 Safni Usman </p>
+        </footer>
+    </main>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
